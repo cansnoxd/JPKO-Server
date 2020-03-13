@@ -11,8 +11,11 @@ Make sure follow this rule for exes to 100% efficency
 
 # [Changelog](Changelog.md)
 
-This is simple binary alternative for people like find openko too difficult and not very good at coding
+My database works perfectly if you want another database you can copy tables from mine
 
+# [Database](https://github.com/cansnoxd/JPKO)
+
+This is simple binary alternative for people like find openko too difficult and not very good at coding
 Check Openko if you dont like this
 
 # [OpenKO](https://github.com/srmeier/KnightOnline)
