@@ -9,6 +9,8 @@ Make sure follow this rule for exes to 100% efficency
 - change it to "Windows XP (Service Pack 2)"
 - hit "Apply" & "OK".
 
+# [Changelog](Changelog.md)
+
 This is simple binary alternative for people like find openko too difficult and not very good at coding
 
 Check Openko if you dont like this
