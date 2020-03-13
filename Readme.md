@@ -9,6 +9,9 @@ Make sure follow this rule for exes to 100% efficency
 - change it to "Windows XP (Service Pack 2)"
 - hit "Apply" & "OK".
 
+# Make sure Extract "Extract HERE" file inside Ebenezer to Ebenezer folder it includes some txt files neededed 
+(since they are empty text files i cannot upload as raw form)
+
 # [Changelog](Changelog.md)
 
 My database works perfectly if you want another database you can copy tables from mine
