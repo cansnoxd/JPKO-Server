@@ -2,6 +2,12 @@
 
 #### BytePatcher Applied to Ebenezer Covers Everything below
 
+#### Ai Server
+
+###### Make AI server close
+
+#### Ebenezer
+
 ######  255 stat point hack
 ######  Add coin loss to CZ & war zones
 ######  AI restart fix
