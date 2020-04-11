@@ -1,3 +1,7 @@
+## Version 2.1
+######  Max level now fixed to Lv70 as suppose to original
+######  Max level 80 exe added (optinal)
+
 ## Version 2
 
 #### BytePatcher Applied to Ebenezer Covers Everything below
