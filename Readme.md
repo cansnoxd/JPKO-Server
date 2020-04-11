@@ -1,3 +1,5 @@
+This project is for academic purposes only!
+
 # Updated KO Binary Server
 
 Thanks to Twostars for Original Files
