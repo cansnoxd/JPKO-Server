@@ -1,6 +1,6 @@
 ## Version 2.2
 ######  There was an issue on ranking knights ebenezer updated
-######  Automated clan grades and rankings updated.patch TO Automated clan grades and rankings (old version)
+######  Automated clan grades and rankings updated.patch TO Automated clan grades and rankings.patch (old version)
 
 ## Version 2.1
 ######  Max level now fixed to Lv70 as suppose to original
