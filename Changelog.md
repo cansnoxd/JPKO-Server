@@ -1,4 +1,5 @@
 ## Version 2.2
+######  Moradon spawn location fix added to aujard
 ######  /noticeall added , just like regular notice but slides like FT text
 ######  There was an issue on ranking knights ebenezer updated
 ######  Automated clan grades and rankings updated.patch TO Automated clan grades and rankings.patch (old version)
