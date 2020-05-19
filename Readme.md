@@ -11,6 +11,10 @@ Make sure follow this rule for exes to 100% efficency
 - change it to "Windows XP (Service Pack 2)"
 - hit "Apply" & "OK".
 
+# Special Thanks to
+Andya
+Gilad
+
 # Make sure Extract "Extract HERE" file inside Ebenezer to Ebenezer folder it includes some txt files neededed 
 (since they are empty text files i cannot upload as raw form)
 
