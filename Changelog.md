@@ -1,3 +1,6 @@
+## Version 2.3
+######  Ebenezer and aujard moved to inside folder now you should pick your desired exe with options between New moradon and Old moradon
+######  New moradon hardcoded exes added
 ## Version 2.2
 ######  Moradon spawn location fix added to aujard
 ######  /noticeall added , just like regular notice but slides like FT text
