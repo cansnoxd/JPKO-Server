@@ -1,0 +1,5 @@
+GO TO > CHOOSE YOUR EXE Folder
+
+Change your desired aujard (XXXX).exe to aujard.exe
+
+After that copy to \Aujard Folder
