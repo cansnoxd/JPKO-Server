@@ -1,0 +1,1 @@
+change Ebenezer_Lv80.exe to Ebenezer.exe if you want to use lvl 80 one
