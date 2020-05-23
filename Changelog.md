@@ -1,3 +1,6 @@
+## Version 2.4
+######  New Moradon and old moradon gets seperate folder now you should pick desired ones without losing original
+######  Smd files updated
 ## Version 2.3
 ######  Ebenezer and aujard moved to inside folder now you should pick your desired exe with options between New moradon and Old moradon
 ######  New moradon hardcoded exes added
