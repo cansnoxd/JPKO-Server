@@ -1,4 +1,5 @@
 ## Version 2.4
+######  Evt update for 70 Quest fix
 ######  New Moradon and old moradon gets seperate folder now you should pick desired ones without losing original
 ######  Smd files updated
 ## Version 2.3
