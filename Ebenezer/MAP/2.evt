@@ -769,10 +769,8 @@ END
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;; Level 70 Quest  ;;;;;;;;;;;;
+;;;;;;;;;; Warrior Level 70 Quest ;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;;;; warrior ;;;;
 
 EVENT 10000
 E SELECT_MSG 14201 10000 601 10001 602 10013 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1;
@@ -868,14 +866,6 @@ E RETURN
 END
 
 EVENT 10006;
-A CHECK_EXIST_EVENT 51 0
-A CHECK_EXIST_ITEM 379041000 1 ; Tail of Lesath (+0)
-A CHECK_EXIST_ITEM 389076000 30 ; Opal (+0)
-A CHECK_EXIST_ITEM 910042000 30 ; Bracelet of orc bandit (+0)
-A CHECK_EXIST_ITEM 379099000 20 ; Magic Hammer (+0)
-A CHECK_EXIST_ITEM 379204000 50 ; Tyon Meat (+0)
-A CHECK_EXIST_ITEM 379067000 1 ; Silver bar (+0)
-A CHECK_EXIST_ITEM 379063000 1 ; Scream Scroll (+0)
 E ROB_ITEM 379041000 1 ; Tail of Lesath (+0)
 E ROB_ITEM 389076000 30 ; Opal (+0)
 E ROB_ITEM 910042000 30 ; Bracelet of orc bandit (+0)
@@ -888,7 +878,9 @@ E SAY -1 -1 10006 -1 -1 -1 -1 -1 -1 -1
 E RETURN
 END
 
-;;;; warrior end ;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;; Warrior Level 70 Quest END ;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;; rogue mastery check for... god knows what ;;;;;
 
@@ -1257,14 +1249,6 @@ E RETURN
 END
 
 EVENT 10031;
-A CHECK_EXIST_EVENT 52 1
-A CHECK_EXIST_ITEM 379042000 1  ; Fang of Bakirra (+0)
-A CHECK_EXIST_ITEM 379045000 20 ; Cursed Bone (+0)
-A CHECK_EXIST_ITEM 379014000 30 ; Blood of Glyptodont (+0) 
-A CHECK_EXIST_ITEM 379113000 5  ; Abyss Wing (+0)
-A CHECK_EXIST_ITEM 379201000 50 ; Tentacle (+0)
-A CHECK_EXIST_ITEM 379067000 1  ; Silver bar (+0) 
-A CHECK_EXIST_ITEM 379064000 1  ; Magic Shield Scroll (+0) 
 E ROB_ITEM 379042000 1  ; Fang of Bakirra (+0)
 E ROB_ITEM 379045000 20 ; Cursed Bone (+0)
 E ROB_ITEM 379014000 30 ; Blood of Glyptodont (+0) 
@@ -1411,7 +1395,7 @@ END
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;; Magýg Beginner Quest Item ;;;;;;;;
+;;;;;; Mage Beginner Quest Item ;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 EVENT 17050;
@@ -1466,7 +1450,7 @@ E RETURN
 END
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;; Magýg Beginner Quest Item END ;;;;
+;;;;;; Mage Beginner Quest Item END ;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -1549,7 +1533,7 @@ END
 ;;;;;;;;;;; Spell of thorn END ;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-                            
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;; Spell of impact  ;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -1753,9 +1737,9 @@ END
 ;;;;;;;; Absolute Power Scroll END;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;; Magýg Lwl 70 Questlar :D ;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;; Mage Level 70 Quest ;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 EVENT 10040
 E SELECT_MSG 14201 10040 601 10041 602 10042 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1;
@@ -1851,14 +1835,6 @@ E RETURN
 END
 
 EVENT 10051;
-A CHECK_EXIST_EVENT 53 1 
-A CHECK_EXIST_ITEM 379040000 1  ; Tail of Shaula (+0)
-A CHECK_EXIST_ITEM 389074000 30 ; Crude Sapphire (+0)
-A CHECK_EXIST_ITEM 379011000 30 ; Bone of Dragon tooth (+0) 
-A CHECK_EXIST_ITEM 379098000 20 ; Sweeping Potion (+0)
-A CHECK_EXIST_ITEM 379203000 50 ; Bee Sting (+0) 
-A CHECK_EXIST_ITEM 379067000 1  ; Silver bar (+0) 
-A CHECK_EXIST_ITEM 379065000 1  ; Absolute Power Scroll (+0)
 E ROB_ITEM 379040000 1  ; Tail of Shaula (+0)
 E ROB_ITEM 389074000 30 ; Crude Sapphire (+0)
 E ROB_ITEM 379011000 30 ; Bone of Dragon tooth (+0) 
@@ -1872,7 +1848,7 @@ E RETURN
 END
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;; Magýg Lwl 70 Questlar :D END;;;;
+;;;;;;;;;; Mage Level 70 Quest END ;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -2073,7 +2049,7 @@ E RUN_EVENT 14155;
 E RUN_EVENT 14160;
 END
 
-EVENT 14120; ·
+EVENT 14120; ?
 A CHECK_LV 1 61
 E SAY -1 -1 14120 -1 -1 -1 -1 -1 -1 -1 ;
 E RETURN
@@ -2120,9 +2096,9 @@ END
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;; Priestlar Lwl 70 Quest ;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;; Priest Level 70 Quest ;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 EVENT 10060
 E SELECT_MSG 14201 10060 601 10061 602 10062 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1;
@@ -2218,14 +2194,6 @@ E RETURN
 END
 
 EVENT 10071;
-A CHECK_EXIST_EVENT 54 1
-A CHECK_EXIST_ITEM 379046000 1    ; Feather of Harpy Queen (+0)
-A CHECK_EXIST_ITEM 389075000 30   ; Crystal (+0) 
-A CHECK_EXIST_ITEM 379044000 30   ; Zombie Eye (+0)
-A CHECK_EXIST_ITEM 379112000 2    ; Abyss Eye (+0)
-A CHECK_EXIST_ITEM 379202000 50   ; Poison Sack (+0)
-A CHECK_EXIST_ITEM 379067000 1    ; Silver bar (+0)
-A CHECK_EXIST_ITEM 379066000 1    ; Judgment Scroll (+0)
 E ROB_ITEM 379046000 1    ; Feather of Harpy Queen (+0)
 E ROB_ITEM 389075000 30   ; Crystal (+0) 
 E ROB_ITEM 379044000 30   ; Zombie Eye (+0)
@@ -2239,7 +2207,7 @@ E RETURN
 END
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;; Priestlar Lwl 70 Quest END;;;;
+;;;;;;;;;; Priest Level 70 Quest END ;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 
@@ -2364,7 +2332,7 @@ E SAY 15081 -1 15083 15084 -1 -1 -1 -1 -1 -1 ;
 END
 
 EVENT 15085
-;E RUN_EVENT 15086; ·again commented out events =( me no likey
+;E RUN_EVENT 15086; ?gain commented out events =( me no likey
 E RUN_EVENT 15090; 
 E RUN_EVENT 15091;
 E RUN_EVENT 15092;
