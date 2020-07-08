@@ -1,4 +1,0 @@
-Just rename Ebenezer.exe (xxxxxx).bak
-to
->
-Ebenezer.exe
