@@ -1,3 +1,6 @@
+## Version 2.5
+######  Downgrade backups removed since i update both versions at same time
+######  New script folder
 ## Version 2.4
 ######  Billing and login server gets classic icons from before
 ######  Evt update for 70 Quest fix
