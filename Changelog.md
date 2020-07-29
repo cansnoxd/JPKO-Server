@@ -1,3 +1,14 @@
+## Version 2.6
+
+#### Ebenezer
+
+###### Fix the server-side party bug
+###### /ban_knights exploit fix 
+
+#### All Files
+
+######  Hardcode updated , every single exe gets new icon
+
 ## Version 2.5
 ######  Downgrade backups removed since i update both versions at same time
 ######  New script folder
