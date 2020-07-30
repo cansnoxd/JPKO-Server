@@ -12,6 +12,10 @@ STEP 2
 
 GO TO > \MAP you are gonna see 2 folder and pick your desired moradon .smd and .evt files and copp to \Ebenezer\MAP
 
+STEP 3
+
+Use 7zip to extract "Extract HERE.7z" folder inside ebenezer since those text files are empty , i cant upload empty text files to github
+
 Done
 
 (TR)
@@ -27,5 +31,9 @@ Sonra \Ebenezer Klasörüne kopyala
 ADIM 2
 
 \MAP dosyasona git > kullandıgın moradon için yeni veya eski moradon klasörleri içindeki dosyaları \Ebenezer\MAP içine kopyala
+
+ADIM 3
+
+7zip kullanarak "Extract HERE.7z" dosyasını ebenezerin içine çıkartın gerekli text dosyaları boş oldugu için github a upload edemiyorum
 
 Hazır
