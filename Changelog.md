@@ -2,6 +2,7 @@
 
 #### Ebenezer
 
+###### New tools added
 ###### Fix the server-side party bug
 ###### /ban_knights exploit fix 
 
