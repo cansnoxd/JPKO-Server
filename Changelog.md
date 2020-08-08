@@ -2,7 +2,7 @@
 
 #### Ebenezer
 
-###### Repel now works two handed (Reflect Damage)
+###### Repel now works on both hands (Reflect Damage)
 
 ## Version 2.6
 
