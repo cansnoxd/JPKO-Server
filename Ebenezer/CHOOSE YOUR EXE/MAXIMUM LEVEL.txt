@@ -1,1 +1,5 @@
-EbenezerClientEditor.exe allows you edit maximum level and other things like clan grade np req if you want just drag your desired ebenezer exe and you can edit.
+Default maximum level of this ebenezer is 70 !
+
+EbenezerClientEditor.exe allows you edit maximum level and other things like clan grade np req if you want just drag your desired ebenezer exe and you can edit
+
+You can push up to Level 90 as far as i know , never tried level 99
