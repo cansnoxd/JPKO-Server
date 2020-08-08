@@ -1,0 +1,565 @@
+<settings>
+	<definition name="Ebenezer (1.298)" signature_offset="0x3C56" signature_value="0x6E792E9">
+		<patch name="Level cap" type="byte">
+			<offset>0xB5100</offset>
+			<offset>0x9F77E</offset>
+			<offset>0x9BC45</offset>
+			<offset>0x20DA3</offset>
+		</patch>
+		<patch name="Server port" type="ushort" value_modifier="-1" offset="0x219BF" />
+		<patch name="Server version" type="ushort">
+			<offset>0x9141B</offset>
+			<offset>0x1CE55</offset>
+			<offset>0x33A80</offset>
+		</patch>
+		<patch name="Private key" type="long" hex="true">
+			<offset>0x25DD10</offset>
+			<offset>0xD1729-0xD1722</offset>
+		</patch>
+		<patch name="Knight_Account DSN" type="string" max_length="19" offset="0x25F0C8" />
+		<patch name="KN_Data DSN" type="string" max_length="11" offset="0x25F0BC" />
+		<patch name="KN_Online DSN" type="string" max_length="11" offset="0x25F0F8" />
+		<patch name="DSN username" type="string" max_length="11" offset="0x25F0EC" />
+		<patch name="DSN password" type="string" max_length="15" offset="0x25F0DC" />
+		<patch name="Grade 1 NP requirement" type="uint" value_modifier="/36">
+			<offset>0x2ACE6</offset>
+			<offset>0x2ACF1</offset>
+		</patch>
+		<patch name="Grade 2 NP requirement" type="uint" value_modifier="/36">
+			<offset>0x2ACD4</offset>
+			<offset>0x2ACDF</offset>
+		</patch>
+		<patch name="Grade 3 NP requirement" type="uint" value_modifier="/36">
+			<offset>0x2ACC2</offset>
+			<offset>0x2ACCD</offset>
+		</patch>
+		<patch name="Grade 4 NP requirement" type="uint" value_modifier="/36">
+			<offset>0x2ACAE</offset>
+			<offset>0x2ACBB</offset>
+		</patch>
+		<patch name="/reload_king" type="string" max_length="15" offset="0x25F530" />
+		<patch name="/king_report2" type="string" max_length="15" offset="0x25F540" />
+		<patch name="/king_report1" type="string" max_length="15" offset="0x25F550" />
+		<patch name="/challenge_level" type="string" max_length="19" offset="0x25F560" />
+		<patch name="/challenge_stop" type="string" max_length="19" offset="0x25F574" />
+		<patch name="/challenge_kill" type="string" max_length="19" offset="0x25F588" />
+		<patch name="/challenge_off" type="string" max_length="19" offset="0x25F59C" />
+		<patch name="/challenge_on" type="string" max_length="15" offset="0x25F5B0" />
+		<patch name="/itemdownreset" type="string" max_length="19" offset="0x25F5C0" />
+		<patch name="/itemdown" type="string" max_length="11" offset="0x25F5D4" />
+		<patch name="/eventlog_off" type="string" max_length="15" offset="0x25F5E0" />
+		<patch name="/eventlog" type="string" max_length="11" offset="0x25F5F0" />
+		<patch name="/battle_auto" type="string" max_length="15" offset="0x25F5FC" />
+		<patch name="/battle3" type="string" max_length="11" offset="0x25F60C" />
+		<patch name="/battle2" type="string" max_length="11" offset="0x25F618" />
+		<patch name="/battle1" type="string" max_length="11" offset="0x25F624" />
+		<patch name="/writelog" type="string" max_length="11" offset="0x25F630" />
+		<patch name="/discount2" type="string" max_length="15" offset="0x25F63C" />
+		<patch name="/discount1" type="string" max_length="15" offset="0x25F64C" />
+		<patch name="/serverdown" type="string" max_length="15" offset="0x25F65C" />
+		<patch name="/rental_start" type="string" max_length="15" offset="0x25F66C" />
+		<patch name="/rental_stop" type="string" max_length="15" offset="0x25F67C" />
+		<patch name="/rental_report" type="string" max_length="19" offset="0x25F68C" />
+		<patch name="/reload_hacktool" type="string" max_length="19" offset="0x25F6A0" />
+		<patch name="/reload_notice" type="string" max_length="19" offset="0x25F6B4" />
+		<patch name="/auto_off" type="string" max_length="11" offset="0x25F6C8" />
+		<patch name="/auto" type="string" max_length="7" offset="0x25F6D4" />
+		<patch name="/exp_add" type="string" max_length="11" offset="0x25F6DC" />
+		<patch name="/money_add" type="string" max_length="15" offset="0x25F6E8" />
+		<patch name="/server_normalmode" type="string" max_length="23" offset="0x25F6F8" />
+		<patch name="/server_testmode" type="string" max_length="19" offset="0x25F710" />
+		<patch name="/offsummonblock" type="string" max_length="19" offset="0x25F724" />
+		<patch name="/onsummonblock" type="string" max_length="19" offset="0x25F738" />
+		<patch name="/limitbattle" type="string" max_length="15" offset="0x25F74C" />
+		<patch name="/offsanta" type="string" max_length="11" offset="0x25F75C" />
+		<patch name="/angel" type="string" max_length="7" offset="0x25F768" />
+		<patch name="/santa" type="string" max_length="7" offset="0x25F770" />
+		<patch name="/offpermanent" type="string" max_length="15" offset="0x25F778" />
+		<patch name="/captain" type="string" max_length="11" offset="0x25F788" />
+		<patch name="/permanent" type="string" max_length="15" offset="0x25F794" />
+		<patch name="/undiscount" type="string" max_length="15" offset="0x25F7A4" />
+		<patch name="/alldiscount" type="string" max_length="15" offset="0x25F7B4" />
+		<patch name="/freediscount" type="string" max_length="15" offset="0x25F7C4" />
+		<patch name="/discount" type="string" max_length="11" offset="0x25F7D4" />
+		<patch name="/down" type="string" max_length="7" offset="0x25F808" />
+		<patch name="/tiebreak" type="string" max_length="11" offset="0x25F810" />
+		<patch name="/Close" type="string" max_length="7" offset="0x25F81C" />
+		<patch name="/snowopen" type="string" max_length="11" offset="0x25F824" />
+		<patch name="/MOpen" type="string" max_length="7" offset="0x25F830" />
+		<patch name="/Open3" type="string" max_length="7" offset="0x25F838" />
+		<patch name="/Open2" type="string" max_length="7" offset="0x25F840" />
+		<patch name="/Open" type="string" max_length="7" offset="0x25F848" />
+		<patch name="+reload_king" type="string" max_length="15" offset="0x25FD88" />
+		<patch name="+king_report2" type="string" max_length="15" offset="0x25FD98" />
+		<patch name="+king_report1" type="string" max_length="15" offset="0x25FDA8" />
+		<patch name="+rental_start" type="string" max_length="15" offset="0x25FDB8" />
+		<patch name="+rental_stop" type="string" max_length="15" offset="0x25FDC8" />
+		<patch name="+rental_report" type="string" max_length="19" offset="0x25FDD8" />
+		<patch name="+challenge_level" type="string" max_length="19" offset="0x25FDEC" />
+		<patch name="+challenge_kill" type="string" max_length="19" offset="0x25FE00" />
+		<patch name="+challenge_off" type="string" max_length="19" offset="0x25FE14" />
+		<patch name="+challenge_on" type="string" max_length="15" offset="0x25FE28" />
+		<patch name="+battle_report" type="string" max_length="19" offset="0x25FE38" />
+		<patch name="+battle_auto" type="string" max_length="15" offset="0x25FE4C" />
+		<patch name="+battle3" type="string" max_length="11" offset="0x25FE5C" />
+		<patch name="+battle2" type="string" max_length="11" offset="0x25FE68" />
+		<patch name="+battle1" type="string" max_length="11" offset="0x25FE74" />
+		<patch name="+discount2" type="string" max_length="15" offset="0x25FE80" />
+		<patch name="+discount1" type="string" max_length="15" offset="0x25FE90" />
+		<patch name="+user_bonus" type="string" max_length="15" offset="0x25FEA0" />
+		<patch name="+exp_add" type="string" max_length="11" offset="0x25FEB0" />
+		<patch name="+money_add" type="string" max_length="15" offset="0x25FEBC" />
+		<patch name="+siegewar_load_table" type="string" max_length="27" offset="0x25FECC" />
+		<patch name="+siegewar_punish_knights" type="string" max_length="31" offset="0x25FEE8" />
+		<patch name="+merchant_money" type="string" max_length="19" offset="0x25FF08" />
+		<patch name="+server_normalmode" type="string" max_length="23" offset="0x25FF1C" />
+		<patch name="+server_testmode" type="string" max_length="19" offset="0x25FF34" />
+		<patch name="+siegewar_check_base" type="string" max_length="27" offset="0x25FF48" />
+		<patch name="+siegewar_status_report" type="string" max_length="27" offset="0x25FF64" />
+		<patch name="+siegewar_base_report" type="string" max_length="27" offset="0x25FF80" />
+		<patch name="+siegewarschedule-end" type="string" max_length="27" offset="0x25FF9C" />
+		<patch name="+siegewarschedule-start" type="string" max_length="27" offset="0x25FFB8" />
+		<patch name="+resetsiegewar" type="string" max_length="19" offset="0x25FFD4" />
+		<patch name="+siegewarfare" type="string" max_length="15" offset="0x25FFE8" />
+		<patch name="+zonechange" type="string" max_length="15" offset="0x25FFF8" />
+		<patch name="+offsummonblock" type="string" max_length="19" offset="0x260008" />
+		<patch name="+onsummonblock" type="string" max_length="19" offset="0x26001C" />
+		<patch name="+limitbattle" type="string" max_length="15" offset="0x260030" />
+		<patch name="+offsanta" type="string" max_length="11" offset="0x260040" />
+		<patch name="+angel" type="string" max_length="7" offset="0x26004C" />
+		<patch name="+santa" type="string" max_length="7" offset="0x260054" />
+		<patch name="+undiscount" type="string" max_length="15" offset="0x26005C" />
+		<patch name="+alldiscount" type="string" max_length="15" offset="0x26006C" />
+		<patch name="+freediscount" type="string" max_length="15" offset="0x26007C" />
+		<patch name="+discount" type="string" max_length="11" offset="0x26008C" />
+		<patch name="+down" type="string" max_length="7" offset="0x2600C0" />
+		<patch name="+auto_off" type="string" max_length="11" offset="0x2600C8" />
+		<patch name="+auto" type="string" max_length="7" offset="0x2600D4" />
+		<patch name="+tiebreak" type="string" max_length="11" offset="0x2600DC" />
+		<patch name="+captain" type="string" max_length="11" offset="0x2600E8" />
+		<patch name="+close" type="string" max_length="7" offset="0x2600F4" />
+		<patch name="+snowopen" type="string" max_length="11" offset="0x2600FC" />
+		<patch name="+forbidconnect" type="string" max_length="19" offset="0x260130" />
+		<patch name="+forbiduser" type="string" max_length="15" offset="0x260188" />
+		<patch name="+mopen" type="string" max_length="7" offset="0x260198" />
+		<patch name="+open3" type="string" max_length="7" offset="0x2601A0" />
+		<patch name="+open2" type="string" max_length="7" offset="0x2601A8" />
+		<patch name="+open" type="string" max_length="7" offset="0x2601B0" />
+		<patch name="+monkill" type="string" max_length="11" offset="0x2601B8" />
+		<patch name="+user_seek_report" type="string" max_length="23" offset="0x2601C4" />
+		<patch name="+unikmonster" type="string" max_length="15" offset="0x2601DC" />
+		<patch name="+monsummonall" type="string" max_length="15" offset="0x2601EC" />
+		<patch name="+monsummon" type="string" max_length="15" offset="0x2601FC" />
+		<patch name="+assault" type="string" max_length="11" offset="0x26020C" />
+		<patch name="+moncatch" type="string" max_length="11" offset="0x260218" />
+		<patch name="+monpursue" type="string" max_length="15" offset="0x260224" />
+		<patch name="+actpursue" type="string" max_length="15" offset="0x260234" />
+	</definition>
+
+	<definition name="Client (1.298)" signature_offset="0x3C56" signature_value="0x6A006A33">
+		<patch name="Server version" type="ushort">
+			<offset>0x2477F5</offset>
+			<offset>0x2484A1</offset>
+		</patch>
+		<patch name="Login server port" type="ushort" offset="0xB68AF" />
+		<patch name="Game server port" type="ushort" offset="0x1F7D5D" />
+		<patch name="Private key" type="long" hex="true">
+			<offset>0x504A1-0x504A6</offset>
+			<offset>0x505BE-0x505C3</offset>
+			<offset>0x5079C-0x507A1</offset>
+			<offset>0x50898-0x5089D</offset>
+			<offset>0x2477AF-0x2477B4</offset>
+			<offset>0x270639-0x270632</offset>
+		</patch>
+		<patch name="Power-Up Store URL" type="string" offset="0x2D507C" max_length="47" />
+		<patch name="Window title" type="string" offset="0x2D7E10" max_length="23" />
+		<patch name="TBL extension" type="string" offset="0x2D79F8" max_length="15" />
+		<patch name="Data\sound.tbl" type="string" offset="0x2D2CF0" max_length="15" />
+		<patch name="Data\NewChrValue.tbl" type="string" offset="0x2D2DA8" max_length="23" />
+		<patch name="Data\skill_magic_main (_##.tbl)" type="string" offset="0x2D78F0" max_length="23" />
+		<patch name="Data\Skill_Magic_1.tbl" type="string" offset="0x2D5EAC" max_length="23" />
+		<patch name="Data\Skill_Magic_2.tbl" type="string" offset="0x2D5E94" max_length="23" />
+		<patch name="Data\Skill_Magic_3.tbl" type="string" offset="0x2D5E7C" max_length="23" />
+		<patch name="Data\Skill_Magic_4.tbl" type="string" offset="0x2D5E64" max_length="23" />
+		<patch name="Data\Skill_Magic_6.tbl" type="string" offset="0x2D5E4C" max_length="23" />
+		<patch name="Data\Skill_Magic_7.tbl" type="string" offset="0x2D5EC4" max_length="23" />
+		<patch name="Data\Skill_Magic_9.tbl" type="string" offset="0x2D5E34" max_length="23" />
+		<patch name="Data\Texts (_##.tbl)" type="string" offset="0x2D79EC" max_length="11" />
+		<patch name="Data\Zones.tbl" type="string" offset="0x2D79DC" max_length="15" />
+		<patch name="Data\Web_Address (_##.tbl)" type="string" offset="0x2D78A8" max_length="19" />
+		<patch name="Data\UI_ (##.tbl)" type="string" offset="0x2D78BC" max_length="15" />
+		<patch name="Data\fx.tbl" type="string" offset="0x2D78CC" max_length="11" />
+		<patch name="Data\Exchange_Quest.tbl" type="string" offset="0x2D78D8" max_length="23" />
+		<patch name="Data\NPC_Looks.tbl" type="string" offset="0x2D7908" max_length="19" />
+		<patch name="Data\Item_Org (_##.tbl)" type="string" offset="0x2D79A4" max_length="15" />
+		<patch name="Data\Item_Ext_%d (_##.tbl)" type="string" offset="0x2D791C" max_length="19" />
+		<patch name="Data\Cloak.tbl" type="string" offset="0x2D7930" max_length="15" />
+		<patch name="Data\DisguiseRing (_##.tbl)" type="string" offset="0x2D7940" max_length="19" />
+		<patch name="Data\Help (_##.tbl)" type="string" offset="0x2D7954" max_length="19" />
+		<patch name="Data\Npc_shout (_##.tbl)" type="string" offset="0x2D7960" max_length="15" />
+		<patch name="Data\Quest_Content (_##.tbl)" type="string" offset="0x2D7970" max_length="19" />
+		<patch name="Data\Quest_Talk (_##.tbl)" type="string" offset="0x2D7984" max_length="15" />
+		<patch name="Data\Quest_Menu (_##.tbl)" type="string" offset="0x2D7994" max_length="15" />
+		<patch name="Data\UPC_Default_Looks.tbl" type="string" offset="0x2D79B4" max_length="27" />
+		<patch name="Data\UIs (_##.tbl)" type="string" offset="0x2D79D0" max_length="11" />	
+		<patch name="Data\slander (_##.tbl)" type="string" offset="0x2D7B50" max_length="15" />
+	</definition>
+
+	<definition name="Launcher (#1)" signature_offset="0x3C56" signature_value="0x488DE445">
+		<patch name="Login server port" type="ushort" offset="0x7F10" />
+		<patch name="Webbrowser URL" type="string" offset="0x4E3DC" max_length="47" />
+		<patch name="Homepage URL" type="string" offset="0x4E634" max_length="43" />
+		<patch name="Command-line argument" type="string" offset="0x4E49C" max_length="19" />
+		<patch name="Executable name" type="string" offset="0x4E480" max_length="19" />
+		<patch name="FTP username" type="string" offset="0x4E4DC" max_length="11" />
+		<patch name="FTP password" type="string" offset="0x4E4E8" max_length="15" />
+	</definition>
+
+	<definition name="Launcher (#2)" signature_offset="0x3C56" signature_value="0x1CB80008">
+		<patch name="Login server port" type="ushort" offset="0x30F8" />
+		<patch name="Webbrowser URL" type="string" offset="0x46B30" max_length="39" />
+		<patch name="Homepage URL" type="string" offset="0x46D44" max_length="35" />
+		<patch name="Executable name" type="string" offset="0x46BBD" max_length="18" />
+		<patch name="FTP username" type="string" offset="0x46BEC" max_length="11" />
+		<patch name="FTP password" type="string" offset="0x46BF8" max_length="15" />
+	</definition>
+
+	<definition name="Launcher (#3)" signature_offset="0x3C56" signature_value="0x8D50C445">
+		<patch name="Login server port" type="ushort" offset="0x80EA" />
+		<patch name="Webbrowser URL" type="string" offset="0x4E3DC" max_length="49" />
+		<patch name="Homepage URL" type="string" offset="0x4E644" max_length="35" />
+		<patch name="Command-line argument" type="string" offset="0x4E4B8" max_length="19" />
+		<patch name="Executable name" type="string" offset="0x4E49C" max_length="19" />
+		<patch name="FTP username" type="string" offset="0x4E484" max_length="11" />
+		<patch name="FTP password" type="string" offset="0x4E490" max_length="11" />
+	</definition>
+
+	<definition name="Launcher (#4)" signature_offset="0x3C56" signature_value="0x810002ED">
+		<patch name="Login server port" type="ushort" offset="0x6029" />
+		<patch name="Webbrowser URL" type="string" offset="0x50928" max_length="55" />
+		<patch name="Homepage URL" type="string" offset="0x50118" max_length="35" />
+		<patch name="Command-line argument" type="string" offset="0x507A0" max_length="19" />
+		<patch name="Executable name" type="string" offset="0x50784" max_length="19" />
+		<patch name="FTP username" type="string" offset="0x50734" max_length="11" />
+		<patch name="FTP password" type="string" offset="0x50740" max_length="11" />
+		<patch name="HTTP username" type="string" offset="0x5074C" max_length="15" />
+		<patch name="HTTP URL" type="string" offset="0x50760" max_length="35" />
+		<patch name="HTTP path" type="string" offset="0x5075C" max_length="3" />
+	</definition>
+
+	<definition name="Launcher (#5)" signature_offset="0x3C56" signature_value="0xE8E4E850">
+		<patch name="Login server port" type="ushort" offset="0x602D" />
+		<patch name="Webbrowser URL" type="string" offset="0x50928" max_length="55" />
+		<patch name="Homepage URL" type="string" offset="0x50110" max_length="35" />
+		<patch name="Command-line argument" type="string" offset="0x507A0" max_length="19" />
+		<patch name="Executable name" type="string" offset="0x50784" max_length="19" />
+		<patch name="FTP username" type="string" offset="0x50734" max_length="11" />
+		<patch name="FTP password" type="string" offset="0x50740" max_length="11" />
+		<patch name="HTTP username" type="string" offset="0x5074C" max_length="15" />
+		<patch name="HTTP URL" type="string" offset="0x50760" max_length="35" />
+		<patch name="HTTP path" type="string" offset="0x5075C" max_length="3" />
+	</definition>
+	
+	<definition name="Ebenezer (1.310/1.351/1.397)" signature_offset="0x3C56" signature_value="0xFFFFEB90">
+		<patch name="Level cap" type="byte">
+			<offset>0x8477A</offset>
+			<offset>0x8168C</offset>
+			<offset>0x95CD0</offset>
+			<offset>0x1805E</offset>
+		</patch>
+		<patch name="Server port" type="ushort" value_modifier="-1" offset="0x18B5F" />
+		<patch name="Server version" type="ushort">
+			<offset>0x78BC6</offset>
+			<offset>0x152EC</offset>
+			<offset>0x27BC0</offset>
+		</patch>
+		<patch name="Private key" type="long" hex="true">
+			<offset>0x11EB98</offset>
+			<offset>0xAC949-0xAC942</offset>
+		</patch>
+		<patch name="Knight_Account DSN" type="string" max_length="15" offset="0x11F814" />
+		<patch name="KN_Data DSN" type="string" max_length="7" offset="0x11F80C" />
+		<patch name="KN_Online DSN" type="string" max_length="11" offset="0x11F838" />
+		<patch name="DSN username" type="string" max_length="7" offset="0x11F830" />
+		<patch name="DSN password" type="string" max_length="11" offset="0x11F824" />
+		<patch name="Grade 1 NP requirement" type="uint" value_modifier="/36">
+			<offset>0x203C3</offset>
+			<offset>0x203CE</offset>
+		</patch>
+		<patch name="Grade 2 NP requirement" type="uint" value_modifier="/36">
+			<offset>0x203BC</offset>
+			<offset>0x203B1</offset>
+		</patch>
+		<patch name="Grade 3 NP requirement" type="uint" value_modifier="/36">
+			<offset>0x203AA</offset>
+			<offset>0x2039F</offset>
+		</patch>
+		<patch name="Grade 4 NP requirement" type="uint" value_modifier="/36">
+			<offset>0x20398</offset>
+			<offset>0x2038B</offset>
+		</patch>
+		<patch name="/beefroast_max" type="string" max_length="15" offset="0x11FBFC" />
+		<patch name="/beefroast_index" type="string" max_length="19" offset="0x11FC0C" />
+		<patch name="/beefroast_hour8" type="string" max_length="19" offset="0x11FC20" />
+		<patch name="/beefroast_hour7" type="string" max_length="19" offset="0x11FC34" />
+		<patch name="/beefroast_hour6" type="string" max_length="19" offset="0x11FC48" />
+		<patch name="/beefroast_hour5" type="string" max_length="19" offset="0x11FC5C" />
+		<patch name="/beefroast_hour4" type="string" max_length="19" offset="0x11FC70" />
+		<patch name="/beefroast_hour3" type="string" max_length="19" offset="0x11FC84" />
+		<patch name="/beefroast_hour2" type="string" max_length="19" offset="0x11FC98" />
+		<patch name="/beefroast_hour1" type="string" max_length="19" offset="0x11FCAC" />
+		<patch name="/beefroast_start" type="string" max_length="19" offset="0x11FCC0" />
+		<patch name="/beefroast_on" type="string" max_length="15" offset="0x11FCD4" />
+		<patch name="/beefroast_off" type="string" max_length="15" offset="0x11FCE4" />
+		<patch name="/beefroast_elmorad" type="string" max_length="19" offset="0x11FCF4" />
+		<patch name="/beefroast_karus" type="string" max_length="19" offset="0x11FD08" />
+		<patch name="/beefroast_time" type="string" max_length="15" offset="0x11FD1C" />
+		<patch name="/reload_king" type="string" max_length="15" offset="0x11FD2C" />
+		<patch name="/king_report2" type="string" max_length="15" offset="0x11FD3C" />
+		<patch name="/king_report1" type="string" max_length="15" offset="0x11FD4C" />
+		<patch name="/challenge_level" type="string" max_length="19" offset="0x11FD5C" />
+		<patch name="/challenge_stop" type="string" max_length="15" offset="0x11FD70" />
+		<patch name="/challenge_kill" type="string" max_length="15" offset="0x11FD80" />
+		<patch name="/challenge_off" type="string" max_length="15" offset="0x11FD90" />
+		<patch name="/challenge_on" type="string" max_length="15" offset="0x11FDA0" />
+		<patch name="/itemdownreset" type="string" max_length="15" offset="0x11FDB0" />
+		<patch name="/itemdown" type="string" max_length="11" offset="0x11FDC0" />
+		<patch name="/eventlog_off" type="string" max_length="15" offset="0x11FDCC" />
+		<patch name="/eventlog" type="string" max_length="11" offset="0x11FDDC" />
+		<patch name="/battle_auto" type="string" max_length="15" offset="0x11FDE8" />
+		<patch name="/battle3" type="string" max_length="11" offset="0x11FDF8" />
+		<patch name="/battle2" type="string" max_length="11" offset="0x11FE04" />
+		<patch name="/battle1" type="string" max_length="11" offset="0x11FE10" />
+		<patch name="/writelog" type="string" max_length="11" offset="0x11FE1C" />
+		<patch name="/discount2" type="string" max_length="11" offset="0x11FE28" />
+		<patch name="/discount1" type="string" max_length="11" offset="0x11FE34" />
+		<patch name="/serverdown" type="string" max_length="11" offset="0x11FE40" />
+		<patch name="/rental_start" type="string" max_length="15" offset="0x11FE4C" />
+		<patch name="/rental_stop" type="string" max_length="15" offset="0x11FE5C" />
+		<patch name="/rental_report" type="string" max_length="15" offset="0x11FE6C" />
+		<patch name="/reload_hacktool" type="string" max_length="19" offset="0x11FE7C" />
+		<patch name="/reload_notice" type="string" max_length="15" offset="0x11FE90" />
+		<patch name="/auto_off" type="string" max_length="11" offset="0x11FEA0" />
+		<patch name="/auto" type="string" max_length="7" offset="0x11FEAC" />
+		<patch name="/exp_add" type="string" max_length="11" offset="0x11FEB4" />
+		<patch name="/money_add" type="string" max_length="11" offset="0x11FEC0" />
+		<patch name="/server_normalmode" type="string" max_length="19" offset="0x11FECC" />
+		<patch name="/server_testmode" type="string" max_length="19" offset="0x11FEE0" />
+		<patch name="/offsummonblock" type="string" max_length="15" offset="0x11FEF4" />
+		<patch name="/onsummonblock" type="string" max_length="15" offset="0x11FF04" />
+		<patch name="/limitbattle" type="string" max_length="15" offset="0x11FF14" />
+		<patch name="/offsanta" type="string" max_length="11" offset="0x11FF24" />
+		<patch name="/angel" type="string" max_length="7" offset="0x11FF30" />
+		<patch name="/santa" type="string" max_length="7" offset="0x11FF38" />
+		<patch name="/offpermanent" type="string" max_length="15" offset="0x11FF40" />
+		<patch name="/captain" type="string" max_length="11" offset="0x11FF50" />
+		<patch name="/permanent" type="string" max_length="11" offset="0x11FF5C" />
+		<patch name="/undiscount" type="string" max_length="11" offset="0x11FF68" />
+		<patch name="/alldiscount" type="string" max_length="15" offset="0x11FF74" />
+		<patch name="/freediscount" type="string" max_length="15" offset="0x11FF84" />
+		<patch name="/discount" type="string" max_length="11" offset="0x11FF94" />
+		<patch name="/down" type="string" max_length="7" offset="0x11FFC4" />
+		<patch name="/tiebreak" type="string" max_length="11" offset="0x11FFCC" />
+		<patch name="/Close" type="string" max_length="7" offset="0x11FFD8" />
+		<patch name="/snowopen" type="string" max_length="11" offset="0x11FFE0" />
+		<patch name="/MOpen" type="string" max_length="7" offset="0x11FFEC" />
+		<patch name="/Open3" type="string" max_length="7" offset="0x11FFF4" />
+		<patch name="/Open2" type="string" max_length="7" offset="0x11FFFC" />
+		<patch name="/Open" type="string" max_length="7" offset="0x120004" />
+		<patch name="+beefroast_max" type="string" max_length="15" offset="0x120408" />
+		<patch name="+beefroast_index" type="string" max_length="19" offset="0x120418" />
+		<patch name="+beefroast_hour8" type="string" max_length="19" offset="0x12042C" />
+		<patch name="+beefroast_hour7" type="string" max_length="19" offset="0x120440" />
+		<patch name="+beefroast_hour6" type="string" max_length="19" offset="0x120454" />
+		<patch name="+beefroast_hour5" type="string" max_length="19" offset="0x120468" />
+		<patch name="+beefroast_hour4" type="string" max_length="19" offset="0x12047C" />
+		<patch name="+beefroast_hour3" type="string" max_length="19" offset="0x120490" />
+		<patch name="+beefroast_hour2" type="string" max_length="19" offset="0x1204A4" />
+		<patch name="+beefroast_hour1" type="string" max_length="19" offset="0x1204B8" />
+		<patch name="+beefroast_start" type="string" max_length="19" offset="0x1204CC" />
+		<patch name="+beefroast_on" type="string" max_length="15" offset="0x1204E0" />
+		<patch name="+beefroast_off" type="string" max_length="15" offset="0x1204F0" />
+		<patch name="+beefroast_elmorad" type="string" max_length="19" offset="0x120500" />
+		<patch name="+beefroast_karus" type="string" max_length="19" offset="0x120514" />
+		<patch name="+beefroast_time" type="string" max_length="15" offset="0x120528" />
+		<patch name="+reload_king" type="string" max_length="15" offset="0x120538" />
+		<patch name="+king_report2" type="string" max_length="15" offset="0x120548" />
+		<patch name="+king_report1" type="string" max_length="15" offset="0x120558" />
+		<patch name="+rental_start" type="string" max_length="15" offset="0x120568" />
+		<patch name="+rental_stop" type="string" max_length="15" offset="0x120578" />
+		<patch name="+rental_report" type="string" max_length="15" offset="0x120588" />
+		<patch name="+challenge_level" type="string" max_length="19" offset="0x120598" />
+		<patch name="+challenge_kill" type="string" max_length="15" offset="0x1205AC" />
+		<patch name="+challenge_off" type="string" max_length="15" offset="0x1205BC" />
+		<patch name="+challenge_on" type="string" max_length="15" offset="0x1205CC" />
+		<patch name="+battle_report" type="string" max_length="15" offset="0x1205DC" />
+		<patch name="+battle_auto" type="string" max_length="15" offset="0x1205EC" />
+		<patch name="+battle3" type="string" max_length="11" offset="0x1205FC" />
+		<patch name="+battle2" type="string" max_length="11" offset="0x120608" />
+		<patch name="+battle1" type="string" max_length="11" offset="0x120614" />
+		<patch name="+discount2" type="string" max_length="11" offset="0x120620" />
+		<patch name="+discount1" type="string" max_length="11" offset="0x12062C" />
+		<patch name="+user_bonus" type="string" max_length="11" offset="0x120638" />
+		<patch name="+exp_add" type="string" max_length="11" offset="0x120644" />
+		<patch name="+money_add" type="string" max_length="11" offset="0x120650" />
+		<patch name="+siegewar_load_table" type="string" max_length="23" offset="0x12065C" />
+		<patch name="+siegewar_punish_knights" type="string" max_length="27" offset="0x120674" />
+		<patch name="+merchant_money" type="string" max_length="15" offset="0x120690" />
+		<patch name="+server_normalmode" type="string" max_length="19" offset="0x1206A0" />
+		<patch name="+server_testmode" type="string" max_length="19" offset="0x1206B4" />
+		<patch name="+siegewar_check_base" type="string" max_length="23" offset="0x1206C8" />
+		<patch name="+siegewar_status_report" type="string" max_length="23" offset="0x1206E0" />
+		<patch name="+siegewar_base_report" type="string" max_length="23" offset="0x1206F8" />
+		<patch name="+siegewarschedule-end" type="string" max_length="23" offset="0x120710" />
+		<patch name="+siegewarschedule-start" type="string" max_length="23" offset="0x120728" />
+		<patch name="+resetsiegewar" type="string" max_length="15" offset="0x120740" />
+		<patch name="+siegewarfare" type="string" max_length="15" offset="0x120750" />
+		<patch name="+zonechange" type="string" max_length="11" offset="0x120760" />
+		<patch name="+offsummonblock" type="string" max_length="15" offset="0x12076C" />
+		<patch name="+onsummonblock" type="string" max_length="15" offset="0x12077C" />
+		<patch name="+limitbattle" type="string" max_length="15" offset="0x12078C" />
+		<patch name="+offsanta" type="string" max_length="11" offset="0x12079C" />
+		<patch name="+angel" type="string" max_length="7" offset="0x1207A8" />
+		<patch name="+santa" type="string" max_length="7" offset="0x1207B0" />
+		<patch name="+undiscount" type="string" max_length="11" offset="0x1207B8" />
+		<patch name="+alldiscount" type="string" max_length="15" offset="0x1207C4" />
+		<patch name="+freediscount" type="string" max_length="15" offset="0x1207D4" />
+		<patch name="+discount" type="string" max_length="11" offset="0x1207E4" />
+		<patch name="+down" type="string" max_length="7" offset="0x120814" />
+		<patch name="+auto_off" type="string" max_length="11" offset="0x12081C" />
+		<patch name="+auto" type="string" max_length="7" offset="0x120828" />
+		<patch name="+tiebreak" type="string" max_length="11" offset="0x120830" />
+		<patch name="+captain" type="string" max_length="11" offset="0x12083C" />
+		<patch name="+close" type="string" max_length="7" offset="0x120848" />
+		<patch name="+snowopen" type="string" max_length="11" offset="0x120850" />
+		<patch name="+forbidconnect" type="string" max_length="15" offset="0x12087C" />
+		<patch name="+forbiduser" type="string" max_length="11" offset="0x1208C8" />
+		<patch name="+mopen" type="string" max_length="7" offset="0x1208D4" />
+		<patch name="+open3" type="string" max_length="7" offset="0x1208DC" />
+		<patch name="+open2" type="string" max_length="7" offset="0x1208E4" />
+		<patch name="+open" type="string" max_length="7" offset="0x1208EC" />
+		<patch name="+monkill" type="string" max_length="11" offset="0x1208F4" />
+		<patch name="+user_seek_report" type="string" max_length="19" offset="0x120900" />
+		<patch name="+unikmonster" type="string" max_length="15" offset="0x120914" />
+		<patch name="+monsummonall" type="string" max_length="15" offset="0x120924" />
+		<patch name="+monsummon" type="string" max_length="11" offset="0x120934" />
+		<patch name="+assault" type="string" max_length="11" offset="0x120940" />
+		<patch name="+moncatch" type="string" max_length="11" offset="0x12094C" />
+		<patch name="+monpursue" type="string" max_length="11" offset="0x120958" />
+		<patch name="+actpursue" type="string" max_length="11" offset="0x120964" />
+	</definition>
+	
+	<definition name="Client (1.310)" signature_offset="0x3C56" signature_value="0x000000B4">
+		<patch name="Server version" type="ushort">
+			<offset>0x255EA1</offset>
+			<offset>0x2551E4</offset>
+		</patch>
+		<patch name="Login server port" type="ushort" offset="0x20006B" />
+		<patch name="Private key" type="long" hex="true">
+			<offset>0x51311-0x51316</offset>
+			<offset>0x5142E-0x51433</offset>
+			<offset>0x5160C-0x51611</offset>
+			<offset>0x51708-0x5170D</offset>
+			<offset>0x25516B-0x255170</offset>
+			<offset>0x28D5E9-0x28D5E2 </offset>
+		</patch>
+		<patch name="Power-Up Store URL" type="string" offset="0x2E4440" max_length="47" />
+		<patch name="Window title" type="string" offset="0x2E7204" max_length="23" />
+		<patch name="TBL extension" type="string" offset="0x2E6EC8" max_length="15" />
+		<patch name="Data\sound.tbl" type="string" offset="0x2E20F0" max_length="15" />
+		<patch name="Data\NewChrValue.tbl" type="string" offset="0x2E21A8" max_length="23" />
+		<patch name="Data\skill_magic_main (_##.tbl)" type="string" offset="0x2E6DC0" max_length="23" />
+		<patch name="Data\Skill_Magic_1.tbl" type="string" offset="0x2E5348" max_length="23" />
+		<patch name="Data\Skill_Magic_2.tbl" type="string" offset="0x2E5330" max_length="23" />
+		<patch name="Data\Skill_Magic_3.tbl" type="string" offset="0x2E5318" max_length="23" />
+		<patch name="Data\Skill_Magic_4.tbl" type="string" offset="0x2E5300" max_length="23" />
+		<patch name="Data\Skill_Magic_6.tbl" type="string" offset="0x2E52E8" max_length="23" />
+		<patch name="Data\Skill_Magic_7.tbl" type="string" offset="0x2E5360" max_length="23" />
+		<patch name="Data\Skill_Magic_9.tbl" type="string" offset="0x2E52D0" max_length="23" />
+		<patch name="Data\Texts (_##.tbl)" type="string" offset="0x2E6EBC" max_length="11" />
+		<patch name="Data\Zones.tbl" type="string" offset="0x2E6EAC" max_length="15" />
+		<patch name="Data\piece_Exchange (_##.tbl)" type="string" offset="0x2E6D64" max_length="19" />
+		<patch name="Data\Web_Address (_##.tbl)" type="string" offset="0x2E6D78" max_length="19" />
+		<patch name="Data\UI_Help (##.tbl)" type="string" offset="0x2E6D8C" max_length="15" />
+		<patch name="Data\fx.tbl" type="string" offset="0x2E6D9C" max_length="11" />
+		<patch name="Data\Exchange_Quest.tbl" type="string" offset="0x2E6DA8" max_length="23" />
+		<patch name="Data\NPC_Looks.tbl" type="string" offset="0x2E6DD8" max_length="19" />
+		<patch name="Data\Item_Org (_##.tbl)" type="string" offset="0x2E6E74" max_length="15" />
+		<patch name="Data\Item_Ext_%d (_##.tbl)" type="string" offset="0x2E6DEC" max_length="19" />
+		<patch name="Data\Cloak.tbl" type="string" offset="0x2E6E00" max_length="15" />
+		<patch name="Data\DisguiseRing (_##.tbl)" type="string" offset="0x2E6E10" max_length="19" />
+		<patch name="Data\Help (_##.tbl)" type="string" offset="0x2E6E24" max_length="15" />
+		<patch name="Data\Npc_shout (_##.tbl)" type="string" offset="0x2E6E30" max_length="15" />
+		<patch name="Data\Quest_Content (_##.tbl)" type="string" offset="0x2E6E40" max_length="19" />
+		<patch name="Data\Quest_Talk (_##.tbl)" type="string" offset="0x2E6E54" max_length="15" />
+		<patch name="Data\Quest_Menu (_##.tbl)" type="string" offset="0x2E6E64" max_length="15" />
+		<patch name="Data\UPC_Default_Looks.tbl" type="string" offset="0x2E6E84" max_length="27" />
+		<patch name="Data\UIs (_##.tbl)" type="string" offset="0x2E6EA0" max_length="11" />
+		<patch name="Data\slander (_##.tbl)" type="string" offset="0x2E6F98" max_length="15" />
+	</definition>
+
+	<definition name="Client (1.351)" signature_offset="0x3C56" signature_value="0x5710244C">
+		<patch name="Server version" type="ushort">
+			<offset>0x2FAFC4</offset>
+			<offset>0x2FBCD1</offset>
+		</patch>
+		<patch name="Login server port" type="ushort" offset="0x28220B" />
+		<patch name="Power-Up Store URL" type="string" offset="0x3A5280" max_length="47" />
+		<patch name="Private key" type="long" hex="true">
+			<offset>0x5B3F1-0x5B3F6</offset>
+			<offset>0x5B50E-0x5B513</offset>
+			<offset>0x5B6EC-0x5B6F1</offset>
+			<offset>0x5B7E8-0x5B7ED</offset>
+			<offset>0x2FAF4B-0x2FAF50</offset>
+			<offset>0x336649-0x336642</offset>
+		</patch>
+		<patch name="Window title" type="string" offset="0x3A9EE0" max_length="23" />
+		<patch name="TBL extension" type="string" offset="0x3A96E8" max_length="15" />
+		<patch name="Data\sound.tbl" type="string" offset="0x3A2DF4" max_length="15" />
+		<patch name="Data\NewChrValue.tbl" type="string" offset="0x3A2EAC" max_length="23" />
+		<patch name="Data\skill_magic_main (_##.tbl)" type="string" offset="0x3A95D8" max_length="23" />
+		<patch name="Data\Skill_Magic_1.tbl" type="string" offset="0x3A7A8C" max_length="23" />
+		<patch name="Data\Skill_Magic_2.tbl" type="string" offset="0x3A7A74" max_length="23" />
+		<patch name="Data\Skill_Magic_3.tbl" type="string" offset="0x3A7A5C" max_length="23" />
+		<patch name="Data\Skill_Magic_4.tbl" type="string" offset="0x3A7A44" max_length="23" />
+		<patch name="Data\Skill_Magic_6.tbl" type="string" offset="0x3A7A2C" max_length="23" />
+		<patch name="Data\Skill_Magic_7.tbl" type="string" offset="0x3A7AA4" max_length="23" />
+		<patch name="Data\Skill_Magic_9.tbl" type="string" offset="0x3A7A14" max_length="23" />
+		<patch name="Data\Texts (_##.tbl)" type="string" offset="0x3A96DC" max_length="11" />
+		<patch name="Data\Zones.tbl" type="string" offset="0x3A96CC" max_length="15" />
+		<patch name="Data\NPC (_##.tbl)" type="string" offset="0x3A9438" max_length="11" />
+		<patch name="Data\Mob (_##.tbl)" type="string" offset="0x3A9444" max_length="11" />
+		<patch name="Data\Player_experience.tbl" type="string" offset="0x3A9450" max_length="27" />
+		<patch name="Data\Quest_Monster_Exchange (_##.tbl)" type="string" offset="0x3A946C" max_length="27" />
+		<patch name="Data\Chat_Seedmsg (_##.tbl)" type="string" offset="0x3A9488" max_length="19" />
+		<patch name="Data\Faq (_##.tbl)" type="string" offset="0x3A949C" max_length="11" />
+		<patch name="Data\Help_Small_Class (_##.tbl)" type="string" offset="0x3A94A8" max_length="23" />
+		<patch name="Data\Help_Medium_Class (_##.tbl)" type="string" offset="0x3A94C0" max_length="23" />
+		<patch name="Data\Help_Large_Class (_##.tbl)" type="string" offset="0x3A94D8" max_length="23" />
+		<patch name="Data\Quest_Npc_Desc (_##.tbl)" type="string" offset="0x3A94F0" max_length="19" />
+		<patch name="Data\Quest_Item_Desc (_##.tbl)" type="string" offset="0x3A9504" max_length="23" />
+		<patch name="Data\Seed_Msg (_##.tbl)" type="string" offset="0x3A951C" max_length="15" />
+		<patch name="Data\Quest_image (_##.tbl)" type="string" offset="0x3A952C" max_length="19" />
+		<patch name="Data\connect_image (_##.tbl)" type="string" offset="0x3A9540" max_length="19" />
+		<patch name="Data\item_exchange (_##.tbl)" type="string" offset="0x3A9554" max_length="19" />
+		<patch name="Data\quest_helper (_##.tbl)" type="string" offset="0x3A9568" max_length="19" />
+		<patch name="Data\piece_Exchange (_##.tbl)" type="string" offset="0x3A957C" max_length="19" />
+		<patch name="Data\Web_Address (_##.tbl)" type="string" offset="0x3A9590" max_length="19" />
+		<patch name="Data\UI_ (##.tbl)" type="string" offset="0x3A95A4" max_length="15" />
+		<patch name="Data\fx.tbl" type="string" offset="0x3A95B4" max_length="11" />
+		<patch name="Data\Exchange_Quest.tbl" type="string" offset="0x3A95C0" max_length="23" />
+		<patch name="Data\NPC_Looks.tbl" type="string" offset="0x3A95F0" max_length="19" />
+		<patch name="Data\Item_Org (_##.tbl)" type="string" offset="0x3A9694" max_length="15" />
+		<patch name="Data\Item_Ext_%d (_##.tbl)" type="string" offset="0x3A9604" max_length="19" />
+		<patch name="Data\Cloak.tbl" type="string" offset="0x3A9618" max_length="15" />
+		<patch name="Data\DisguiseRing (_##.tbl)" type="string" offset="0x3A9628" max_length="19" />
+		<patch name="Data\Quest_Guide (_##.tbl)" type="string" offset="0x3A963C" max_length="19" />
+		<patch name="Data\Npc_shout (_##.tbl)" type="string" offset="0x3A9650" max_length="15" />
+		<patch name="Data\Quest_Content (_##.tbl)" type="string" offset="0x3A9660" max_length="19" />
+		<patch name="Data\Quest_Talk (_##.tbl)" type="string" offset="0x3A9674" max_length="15" />
+		<patch name="Data\Quest_Menu (_##.tbl)" type="string" offset="0x3A9684" max_length="15" />
+		<patch name="Data\UPC_Default_Looks.tbl" type="string" offset="0x3A96A4" max_length="27" />
+		<patch name="Data\UIs (_##.tbl)" type="string" offset="0x3A96C0" max_length="11" />
+		<patch name="Data\slander (_##.tbl)" type="string" offset="0x3A9BE0" max_length="15" />
+	</definition>
+</settings>
