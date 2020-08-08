@@ -2,6 +2,12 @@
 
 #### Ebenezer
 
+###### Repel now works two handed (Reflect Damage)
+
+## Version 2.6
+
+#### Ebenezer
+
 ###### New tools added
 ###### Fix the server-side party bug
 ###### /ban_knights exploit fix 
