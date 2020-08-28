@@ -1,3 +1,9 @@
+## Version 2.8
+
+#### Ebenezer
+
+###### TS with Scrolls Enabled
+
 ## Version 2.7
 
 #### Ebenezer
