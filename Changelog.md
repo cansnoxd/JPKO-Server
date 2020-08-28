@@ -1,5 +1,9 @@
 ## Version 2.8
 
+#### All Files
+
+######  New icons 16 bit and they look better
+
 #### Ebenezer
 
 ###### TS with Scrolls Enabled
