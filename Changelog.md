@@ -2,6 +2,7 @@
 
 #### All Files
 
+######  Dupe scanner goes moved from start server on server management.bat it this way you can save cpu usage while testing on localhost or single
 ######  New icons 16 bit and they look better
 
 #### Ebenezer
