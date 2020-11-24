@@ -18,7 +18,7 @@ echo    4) Clean Log Files
 echo.
 echo    5) Open Aujard Again (Windows 8.1 Fix)
 echo.
-echo    6) Open Scheduler
+echo    6) Open Scheduler and Dupe Scanner
 echo.
 echo.   
 echo.	
@@ -39,7 +39,6 @@ cd Login server && start /min login-server.exe
 cd ..\AIServer && start /min "" "AI Server.exe"
 cd ..\Aujard && start /min Aujard.exe
 cd ..\Ebenezer && start /min Ebenezer.exe
-cd ..\Ebenezer && start /min DupeScanner.exe
 cd ..\Billing server && start /min billing-server.exe && cd ..
 cls
 set mtext=Do you want to do something else?:
@@ -62,13 +61,11 @@ wmic process where name="login-server.exe" delete >nul
 wmic process where name="AI Server.exe" delete >nul
 wmic process where name="Aujard.exe" delete >nul
 wmic process where name="Ebenezer.exe" delete >nul
-wmic process where name="DupeScanner.exe" delete >nul
 wmic process where name="billing-server.exe" delete >nul
 cd Login server && start /min login-server.exe
 cd ..\AIServer && start /min "" "AI Server.exe"
 cd ..\Aujard && start /min Aujard.exe
 cd ..\Ebenezer && start /min Ebenezer.exe
-cd ..\Ebenezer && start /min DupeScanner.exe
 cd ..\Billing server && start /min billing-server.exe && cd ..
 cls
 set mtext=Do you want to do something else?:
@@ -84,13 +81,14 @@ set mtext=Do you want to do something else?:
 goto:Main
  
 :Aujard
-cd Aujard && start /min Aujard.exe && cd ..
+cd Aujard && start /min Aujard.exe
 cls
 set mtext=Do you want to do something else?:
 goto:Main
 
 :Scheduler
-cd Ebenezer && start /min KOScheduler.exe && cd ..
+cd Ebenezer && start /min KOScheduler.exe
+cd ..\Ebenezer && start /min DupeScanner.exe && cd ..
 cls
 set mtext=Do you want to do something else?:
 goto:Main
